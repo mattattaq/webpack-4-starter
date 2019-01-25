@@ -28,11 +28,6 @@ const common = {
         title: 'Webpack app',
         template: './src/index.html'
       }),
-      new webpack.ProvidePlugin({
-        $: 'jquery',
-        jQuery: 'jquery',
-        Popper: ['popper.js', 'default']
-      })
     ]
 };
 

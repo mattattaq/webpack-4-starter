@@ -1,7 +1,7 @@
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 // Create multiple instances
-const extractCSS = new ExtractTextPlugin({filename: 'css/[name]-custom.css', allChunks: true});
-const extractSASS = new ExtractTextPlugin({filename: 'css/[name]-includes.css', allChunks: true});
+const extractCSS = new ExtractTextPlugin({filename: 'css/[name].css', allChunks: true});
+const extractSASS = new ExtractTextPlugin({filename: 'css/[name].css', allChunks: true});
  
 module.exports = function(paths){
     return {
